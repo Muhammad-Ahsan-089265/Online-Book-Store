@@ -1,0 +1,733 @@
+/* books.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .logo em {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar .links .last-link {
+    margin-left: auto;
+}
+
+/* Book Section Styles */
+.book-section {
+    display: flex;
+    justify-content: space-around; /* Reduced spacing between books */
+    margin: 20px 0;
+}
+
+.book-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1; /* Each book will take up equal space */
+    margin: 0 10px; /* Reduced margin between books */
+    max-width: 200px; /* Ensures books don't stretch too wide */
+}
+
+
+.book-item img {
+    width: 150px; /* Fixed width */
+    height: 220px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fills the area */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745; /* Green color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+/* Navigation Button */
+.navigation-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation-btn button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navigation-btn button:hover {
+    background-color: #0056b3;
+}
+
+/* Motive Section Styles */
+.motive {
+    text-align: center;
+    margin: 40px 0;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.motive article {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .links {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .book-section {
+        flex-direction: column;
+    }
+
+    .book-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Home page css */
+
+
+/* Main Section Styles */
+.main {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.main .explore-button {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main .explore-button:hover {
+    background-color: #218838;
+}
+
+/* Icon Section Styles */
+.icon-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icon-container a {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.icon-container a:hover {
+    transform: scale(1.1);
+}
+
+.icon-container img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Enhanced Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navbar .links {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .links a {
+        margin: 5px 0;
+    }
+
+    .icon-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-container {
+        flex-direction: column;
+    }
+
+    .icon-container a {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* Login.css*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Login Form Styles */
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #218838;
+}
+
+.form p {
+    text-align: center;
+    color: #555;
+}
+
+.form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* favourite.css */
+
+
+/* Additional Styles for Favourite Page */
+
+/* Slogan Styles */
+.slogan_f {
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 24px;
+    color:darkslategrey;
+    font-style: italic;
+}
+
+/* Table Container */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+#books-info {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#books-info caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+#books-info th, #books-info td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#books-info th {
+    background-color: #2317cc;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#books-info tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#books-info tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Footer Styles for favourite.php */
+.footer_f {
+    text-align: center;
+    margin-top: 20px;
+    color:aqua;
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+
+/* About Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Main Content */
+.about-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Experts Section */
+.facts h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.expert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #28a745;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.expert h4 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.expert p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.expert p em {
+    font-style: italic;
+    color: #28a745;
+}
+
+.expert p:last-child {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Success Equation Section */
+.success-equation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-left: 5px solid #28a745;
+    border-radius: 8px;
+}
+
+.success-equation h4 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.success-equation p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Add_to_cart.php */
+
+/* Container for the Add to Cart form */
+.container_a {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.add-to-cart-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label styling */
+.add-to-cart-form label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Select and input styling */
+.add-to-cart-form select,
+.add-to-cart-form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Button styling */
+.add-to-cart-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-form button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+/* Added to cart added.css */
+
+
+.container_success {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.container_success h1 {
+    color: #28a745; /* Green color */
+    font-size: 2em;
+}
+
+.container_success p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.container_success a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container_success .continue-shopping {
+    background-color: #007bff; /* Blue color */
+}
+
+.container_success .view-cart {
+    background-color: #28a745; /* Green color */
+}
+
+.container_success .back-to-add {
+    background-color: #ffc107; /* Yellow color */
+}
+
+.container_success .buy-more-books {
+    background-color: #dc3545; /* Red color */
+}
+
+.container_success a:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+/* buy.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container_b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.form-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="url"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.radio-group legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.radio-group label {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
